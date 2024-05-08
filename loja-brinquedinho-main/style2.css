@@ -1,3 +1,4 @@
+/* Estilos para o corpo e a header */
 html,
 body {
   padding: 0;
@@ -52,12 +53,7 @@ body {
   padding: 0px 20px;
 }
 
-.produtos_lista1 {
-  display: flex;
-  flex-direction: row;
-  
-}
-
+/* Estilos para o conteúdo principal */
 .mainn {
   display: flex;
   flex-direction: column;
@@ -156,27 +152,78 @@ body {
   filter: brightness(0) saturate(100%) invert(24%) sepia(2%) saturate(0%) hue-rotate(119deg) brightness(99%) contrast(92%);
 }
 
+/* Estilos para o footer */
 .footerr {
   display: flex;
   background-color: #FFF;
   padding: 20px 40px;
 }
 
+/* Estilos para o banner */
 .banner_container {
   display: flex;
   flex-direction: row;
   gap: 20px;
-  img {
-    border-radius: 10px;
-    cursor: pointer;
-    transition: transform 0.3s;
-  }
-  img:hover {
-    transform: scale(1.04);
-  }
-  div {
-    display: flex; 
-    flex-direction: column; 
-    gap: 20px;
-  }
 }
+
+.banner_container img {
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.banner_container img:hover {
+  transform: scale(1.04);
+}
+
+.banner_container div {
+  display: flex; 
+  flex-direction: column; 
+  gap: 20px;
+}
+
+.login-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  .login-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .login-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-container label {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .login-container input[type="text"],
+  .login-container input[type="password"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+  }
+  
+  .login-container input[type="submit"] {
+    background-color: #FFCF81;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-container input[type="submit"]:hover {
+    background-color: #FFA841;
+  }
+  
